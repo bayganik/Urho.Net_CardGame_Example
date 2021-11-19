@@ -8,7 +8,9 @@ I also like the ECS framework for games. So, I took the "Node" in the scene to b
 Using the "SceneComponent" from https://github.com/Urho-Net/Samples I added a node processing loop to manage the systems.  This allows me to use "AddNodeProcessing" method to separate updates of so many nodes.  This makes the original scene cleaner. So to repeat :-)
 
 Entity = Urho Node
+
 Component = Urho Component
+
 System = My NodeProcessingSystem
 
 ## Sample Screen
