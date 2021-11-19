@@ -20,7 +20,7 @@ System = My NodeProcessingSystem
             base.OnUpdate(timeStep);
             Global.DeltaTime = timeStep;
             //
-            // Process node systemsI
+            // Process node systems
             //
             if (NodeSystems.Count > 0)
             {
