@@ -7,11 +7,31 @@ I also like the ECS framework for games. So, I took the "Node" in the scene to b
 
 Using the "SceneComponent" from https://github.com/Urho-Net/Samples I added a node processing loop to manage the systems.  This allows me to use "AddNodeProcessing" method to separate updates of so many nodes.  This makes the original scene cleaner. So to repeat :-)
 
-Entity = Urho Node
+Entity = Urho scene Node
 
-Component = Urho Component
+Component = Urho scene Component
 
 System = My NodeProcessingSystem
+
+## SceneComponent
+        protected override void OnUpdate(float timeStep)
+        {
+            //MoveCameraByTouches(timeStep);
+            base.OnUpdate(timeStep);
+            Global.DeltaTime = timeStep;
+            //
+            // Process node systemsI
+            //
+            if (NodeSystems.Count > 0)
+            {
+                foreach (NodeProcessingSystem ns in NodeSystems)
+                    ns.Process();
+            }
+        }
+        protected void AddNodeProcessing(NodeProcessingSystem _system)
+        {
+            NodeSystems.Add(_system);
+        }
 
 ## Sample Screen
 
