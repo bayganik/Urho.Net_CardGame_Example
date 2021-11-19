@@ -1,2 +1,6 @@
-# Urho.Net_CardGame_Example
-Urho.Net 2D card game using a sudo ECS framework to make solitaire game
+# Urho.Net CardGame Example
+This is a simple solitaire card game to show usage of Urho.Net in creating a 2D game. 
+
+https://github.com/Urho-Net/Urho.Net 
+
+I also like the ECS framework for games. So, I took the "Node" in the scene to be an Entity and created a node processing system to manage the system part of ECS.
