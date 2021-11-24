@@ -1,4 +1,6 @@
 # Urho.Net CardGame Example
+Update: if you have compile issues, change the root directory name from Urho.Net_cardGame_Example-master to CardGameExample
+
 This is a simple solitaire card game to show usage of Urho.Net in creating a 2D game. 
 
 https://github.com/Urho-Net/Urho.Net 
